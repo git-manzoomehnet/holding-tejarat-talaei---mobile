@@ -1,0 +1,121 @@
+<basis core="dbsource" source="basiscore" mid="1" lid="1" name="list" catid="208523" q="[##cms.form.q##]">
+    <member name="search" type="list" link="article.bc" propertyid="7244" />
+</basis>
+<basis core="dbsource" source="basiscore" mid="1" lid="1" name="list" catid="208524" q="[##cms.form.q##]">
+    <member name="search1" type="list" link="article.bc" propertyid="7244" />
+</basis>
+
+<basis core="dbsource" source="basiscore" mid="1" lid="1" name="list" catid="208674" q="[##cms.form.q##]">
+    <member name="search2" type="list" link="article.bc" propertyid="7244" />
+</basis>
+
+<basis core="dbsource" source="basiscore" mid="1" lid="1" name="list" catid="208678" q="[##cms.form.q##]">
+    <member name="search3" type="list" link="article.bc" propertyid="7244" />
+</basis>
+
+<script src="/_js/jquery-1.7.2.min.js"></script>
+<script>
+
+    $(".result p").each(function () {
+
+        var my_string = this.innerText;
+
+        my_string = my_string.replace(/[##cms.form.q##]/g, <span class="highlight">[##cms.form.q##]</span>);
+
+        this.innerText = my_string;
+    });
+
+
+</script>
+
+
+
+<basis core="print" datamembername="list.search">
+    <face>
+        <div class="result">
+            <p>
+                @title
+            <p>@prp_7244</p>
+            </p><a class="showMoreLink" href="/@link">
+                <div class="more">
+                    <p>مشاهده</p>
+                    <div class="circle">
+                        <div class="dot"></div>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </face>
+</basis>
+
+<basis core="print" datamembername="list.search1">
+    <face>
+        <div class="result">
+            <p>
+                @title
+            <p>@prp_7244</p>
+            </p><a class="showMoreLink" href="/@link">
+                <div class="more">
+                    <p>مشاهده</p>
+                    <div class="circle">
+                        <div class="dot"></div>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </face>
+</basis>
+
+<basis core="print" datamembername="list.search2">
+    <face>
+        <div class="result">
+            <p>
+                @title
+            <p>@prp_7244</p>
+            </p><a class="showMoreLink" href="/@link">
+                <div class="more">
+                    <p>مشاهده</p>
+                    <div class="circle">
+                        <div class="dot"></div>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </face>
+</basis>
+
+<basis core="print" datamembername="list.search3">
+    <face>
+        <div class="result">
+            <p>
+                @title
+            <p>@prp_7244</p>
+            </p><a class="showMoreLink" href="/@link">
+                <div class="more">
+                    <p>مشاهده</p>
+                    <div class="circle">
+                        <div class="dot"></div>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </face>
+</basis>
+
+<basis core="group" if="'[##list.search.RowNumber##]' = '' and '[##list.search1.RowNumber##]' = '' and '[##list.search2.RowNumber##]' = '' and '[##list.search3.RowNumber##]' = ''">
+
+    <div class="para">
+
+        <p>
+            باعرض پوزش مطلبی پیدا نشد.
+            <br>
+واژه دیگری را جست و جو نمایید.
+        </p>
+    </div>
+</basis>
+
+<style>
+    .search-wrapper {
+        height: 285px !important;
+    }
+</style>

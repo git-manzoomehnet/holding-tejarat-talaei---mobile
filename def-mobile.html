@@ -50,6 +50,9 @@
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/scroll.css" />
     <link rel="stylesheet" href="css/app.css" />
+
+    <link rel="stylesheet" href="css/mobile-newStyle.css" />
+
     <title>تجارت طلایی</title>
     <style>
          
@@ -57,7 +60,6 @@
     justify-content: center;
     align-items: center;
     gap: 8px;
-    white-space: nowrap;
 }
             .swiper-wrapper_js  .detail img{
                 width: 19px;
@@ -146,9 +148,6 @@ width: 89px;
 
 .swiper-child:nth-child(4n)  .swiper-next{
     background-color: #B2D9EA;
-}
-.search-wrapper.search-wrapper-toggle{
-height: fit-content;
 }
         @media only screen and (max-width: 680px){
             .pin-spacer .text {
@@ -378,36 +377,11 @@ height: fit-content;
     width: 100%;
     height: auto!important;
 }
-.mySwiper2 {
-    padding-bottom: 36px;
-}
-.swiper-child .swiper-next{
-    max-width: unset;
-}
-.service-cards ul li{
-    width: 60%!important;
-}
 
-.description-container{
-    width: 100%;
-}
-.aboutus-text{
-    display: block;
-}
-.text-cont{
-    width: 100%;
-}
-.about-us{
-    display: block;
-}
-
-.swiper2{
-    height: fit-content!important;
-}
     </style>
 </head>
 
-<body>
+<body class="defaultBody">
 
 
     <section class="homepage-section">
@@ -432,7 +406,7 @@ height: fit-content;
 
 
 
-        <div class="video-wrapper">
+        <div class="video-wrapper" style="height: 100vh;">
 
 <basis core="print" datamembername="db.defGalleryy">
          
@@ -495,7 +469,7 @@ height: fit-content;
 
 
     </section> 
-   <section class="about-us">
+   <section class="about-us" style="margin-top: 120px !important;">
         <div class="description-container">
             <div class="right-border">
                 <a href="./html/aboutus.html">
@@ -546,10 +520,10 @@ height: fit-content;
                 </div>
                 <div class="arrows">
                     <div class="arrrow-btn">
-                        <div class="about-next" onclick="aboutusenext()">
+                        <div class="about-next">
                             <img src="./assets/svg/right-arrow.svg" />
                         </div>
-                        <div class="about-prev" onclick="aboutuseprev()">
+                        <div class="about-prev">
                             <img src="./assets/svg/left-arrow.svg" />
                         </div>
                     </div>
@@ -567,7 +541,7 @@ height: fit-content;
                 </face>
                 </basis>
                 <div class="more">
-                    <a href="https://www.tejaratetalaeenews.ir/IRAN-RETAIL-SHOW">
+                    <a href="http://iranretailshow.com">
                         <p>www.iranretail.ir</p>
                     </a>
                     <div class="circle">
@@ -627,7 +601,7 @@ height: fit-content;
                 </face>
                 </basis>
                 <div class="more">
-                    <a href="https://www.tejaratetalaeenews.ir/IRAN-RETAIL-SHOW">
+                    <a href="http://iranretailawards.com">
                         <p>www.iranretail.ir</p>
                     </a>
                     <div class="circle">
@@ -652,7 +626,7 @@ height: fit-content;
                         <basis core="print" datamembername="db.retailGallery">
                             <face filter="ord in (1010)">
 
-                        <div class="swiper-slide slide" >
+                        <div class="swiper-slide slide" style="display: flex">
                             <div class="description-text">
                                 <h1>@name</h1>
                                 <p>
@@ -666,13 +640,13 @@ height: fit-content;
 
                     
                     </div>
-                    <div class="arrrow-btn2">
-                        <div class="awards-next">
-                            <img src="./assets/svg/right-arrow.svg" />
-                        </div>
-                        <div class="awards-prev">
-                            <img src="./assets/svg/left-arrow.svg" />
-                        </div>
+                </div>
+                <div class="arrrow-btn2">
+                    <div class="awards-next">
+                        <img src="./assets/svg/right-arrow.svg" />
+                    </div>
+                    <div class="awards-prev">
+                        <img src="./assets/svg/left-arrow.svg" />
                     </div>
                 </div>
 
@@ -727,7 +701,7 @@ height: fit-content;
         <div class="right-border2">
             <h1>ماهنامه تجارت طلایی</h1>
             <div class="more">
-                <a href="https://www.tejaratetalaeenews.ir/IRAN-RETAIL-SHOW">
+                <a href="http://iranretailshow.com">
                     <p class="mah">www.iranretail.ir</p>
                 </a>
                 <div class="circle2">
@@ -738,9 +712,10 @@ height: fit-content;
 
      
 
-        <div class="mahnameh-mobile-cont1">
+        <div class="mahnameh-mobile-cont">
             <div class="swiper mySwiper swiper-mobile" style="
-          
+            width: 264px;
+            height: 360px;
             margin-top: 40px;
             margin-bottom: 70px;
           ">
@@ -764,9 +739,9 @@ height: fit-content;
                     </basis>
 
                 </div>
-                <div class="swiper-button-next about-next"></div>
-                <div class="swiper-button-prev about-prev"></div>
             </div>
+            <div class="swiper-button-next about-next"></div>
+            <div class="swiper-button-prev about-prev"></div>
         </div>
 
 
@@ -789,10 +764,8 @@ height: fit-content;
     <script src="js/gsap.min.js"></script>
     <script src="js/ScrollTrigger.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
-    <script src="/_js/jquery/jquery-3.4.1.min.js"></script>
-    <script src="/_js/imageLoaded.js"></script>
-
-    <script src="js/script-tablet.js"></script>
+    <script src="/_js/jquery-1.7.2.min.js"></script>
+    <script src="js/script-mobile.js"></script>
 
   
     <script>

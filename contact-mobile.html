@@ -1,102 +1,95 @@
 <basis core="dbsource" name="db" source="basiscore" lid="1" mid="5" usedforid="9623">
-  <member name="contactus" type="view"/>
-</basis>  
+  <member name="contactus" type="view" />
+</basis>
 
 
 <!DOCTYPE html>
 <html lang="en" dir="rtl">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="[##cms.cms.cdn##]/css/contactus.css" />
+  <link rel="stylesheet" href="[##cms.cms.cdn##]/css/mobile-newStyle.css" />
 
   <link rel="stylesheet" href="[##cms.cms.cdn##]/css/app.css" />
-<link rel="stylesheet" href="[##cms.cms.cdn##]/css/mobile-newStyle.css" />
-
-  <link rel="stylesheet"
-    href="css/bootstrap-icons.min.css"
-  />
+  <link rel="stylesheet" href="css/bootstrap-icons.min.css" />
   <title>تماس باما </title>
   <style>
-.flexcontact{
-  display: flex;
-}
-.flexcontact2{
-  width: 50%;
-}
-.flexcontact_padding {
-  padding: 10px 15px 0;
-}
-.stylefont{
-  text-decoration: none;
-  color: #fff;
-}
-.order-inline{
+    .flexcontact {
+      display: flex;
+    }
 
-/*    display: flex; */
-  flex-direction: row;
-  justify-content: space-between;
-}
-body {
-  background-color: black;
-  overflow-x: hidden;
-}
-.flexcontact2 {
-  width: 100%;
-  padding: 15px;
-}
-.header-border , .header-contact{
-  width: 100%;
-}
-_textarea {
-  background-color: #171717;
-  width: 100%;
-  margin: 15px 0;
-}
-input , form {
-  padding: 10px 5px;
-  width: 100%;
-  margin: 15px 0;
-  background-color: #171717;
-}
+    .flexcontact2 {
+      width: 50%;
+    }
 
-.submit-cont {
-  display: flex;
-  align-items: center;
-  width: 100%;
-}
-.flexcontact {
-  display: flex;
-  flex-direction: column;
-}
-.frame{
-  margin-top: 75px;
-}
+    .flexcontact_padding {
+      padding: 10px 15px 0;
+    }
 
-.contact-us{
-  flex-wrap: wrap;
-  height: auto;
-}
-.contact-us .header-contact{
-  width: 50%!important;
-}
+    .stylefont {
+      text-decoration: none;
+      color: #fff;
+    }
 
-.header-contact.header-border{
-  margin: auto;
-  width: 50%;
-}
+    .order-inline {
 
-.header-border{
-  display: none;
-}
-.form-cont{
-  height: auto;
-}
-.h{
-  margin-top: 0;
-}
+      /*  display: flex; */
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    body {
+      background-color: black;
+      overflow-x: hidden;
+    }
+
+    .flexcontact2 {
+      width: 100%;
+      padding: 15px;
+    }
+
+    .header-border,
+    .header-contact {
+      width: 100%;
+    }
+
+    _textarea {
+      background-color: #171717;
+      width: 100%;
+      margin: 15px 0;
+    }
+
+    input,
+    form {
+      padding: 10px 5px;
+      width: 100%;
+      margin: 15px 0;
+      background-color: #171717;
+    }
+
+    .submit-cont {
+      display: flex;
+      align-items: center;
+      width: 100%;
+    }
+
+    .flexcontact {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .frame {
+      margin-top: 75px;
+    }
+
+    .contact-us {
+      height: auto;
+    }
   </style>
 </head>
+
 <body class="contactBody">
   <basis core="call" file="header.inc" />
 
@@ -117,30 +110,30 @@ input , form {
         <div class="sub-header">
           <p class="h2">ادرس</p>
           <basis core="print" datamembername="db.contactus">
-              <face filter="TypeID=244">
-      @Answer
+            <face filter="TypeID=244">
+              @Answer
         </div>
-      </face>
-  </basis>
-  <div class="order-inline">
-      <div class="sub-header">
-          <p class="h2">فکس</p>
-          <basis core="print" datamembername="db.contactus">
+        </face>
+        </basis>
+        <div class="order-inline">
+          <div class="sub-header">
+            <p class="h2">فکس</p>
+            <basis core="print" datamembername="db.contactus">
               <face filter="TypeID=241">
-          <p> @Answer</p>
-          </face>
-          </basis>
-        </div>
-        <div class="sub-header">
-          <p class="h2">تلفن</p>
-          <basis core="print" datamembername="db.contactus">
+                <p> @Answer</p>
+              </face>
+            </basis>
+          </div>
+          <div class="sub-header">
+            <p class="h2">تلفن</p>
+            <basis core="print" datamembername="db.contactus">
               <face filter="TypeID=240">
-          <p> @Answer</p>
-          </face>
-          </basis>
+                <p> @Answer</p>
+              </face>
+            </basis>
+          </div>
         </div>
-  </div>
-<!--    <div class="order-inline">
+        <!--    <div class="order-inline">
    
           <p class="h2">دریافت آدرس</p>
    
@@ -151,57 +144,57 @@ input , form {
         </div>
   </div>
 -->
-       
+
       </div>
     </div>
 
-    <div class="header-contact">
+    <div class="header-contact ">
       <div class="header-border">
-
         <h2>شبکه اجتماعی</h2>
         <div>
-      </div>
-        <div class="sub-header">
-          <p class="h2">اینستاگرام</p>
-          <basis core="print" datamembername="db.contactus">
+          <div class="sub-header">
+            <p class="h2">اینستاگرام</p>
+            <basis core="print" datamembername="db.contactus">
               <face filter="text='اینستاگرام'">
-                  @largetext
-                  <br>
-                  </face>
-                  </basis>
-       
-        </div>
-        <div class="sub-header">
-          <p class="h2">لینکدین</p>
-          <basis core="print" datamembername="db.contactus">
-              <face filter="text='لینکدین'">
-                  @largetext
-                  <br>
+                @largetext
+                <br>
               </face>
-              </basis>
+            </basis>
+
+          </div>
+          <div class="sub-header">
+            <p class="h2">لینکدین</p>
+            <basis core="print" datamembername="db.contactus">
+              <face filter="text='لینکدین'">
+                @largetext
+                <br>
+              </face>
+            </basis>
+          </div>
         </div>
+
       </div>
     </div>
 
     <div class="header-contact">
       <h2>وب سایت</h2>
       <div class="links">
-          <basis core="print" datamembername="db.contactus">
-              <face filter="TypeID=243">
-                  <a class="stylefont" href="@answer">
-                      <p>@Answer</p>
+        <basis core="print" datamembername="db.contactus">
+          <face filter="TypeID=243">
+            <a class="stylefont" href="@answer">
+              <p>@Answer</p>
 
-                  </a>
-                  
-                  </face>
-                  </basis>
+            </a>
+
+          </face>
+        </basis>
 
       </div>
     </div>
   </div>
-<div class="flexcontact">
+  <div class="flexcontact">
 
-  <div class="form-cont flexcontact2">
+    <div class="form-cont flexcontact2">
       <h2 class="h">فرم ارسال پیام</h2>
       <p>
         لطفا پیام مورد نظر خود را برای ما ثبت و ارسال بفرمایید. جواب مربوطه برای
@@ -258,19 +251,22 @@ input , form {
     </div>
 
 
-<div class="flexcontact2 flexcontact_padding">
-  <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3241.2408020765088!2d51.37419579999999!3d35.6710723!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzXCsDQwJzE1LjkiTiA1McKwMjInMjcuMSJF!5e0!3m2!1sen!2s!4v1719753765507!5m2!1sen!2s"
-  width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-</div>
-   
+    <div class="flexcontact2 flexcontact_padding">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3241.2408020765088!2d51.37419579999999!3d35.6710723!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzXCsDQwJzE1LjkiTiA1McKwMjInMjcuMSJF!5e0!3m2!1sen!2s!4v1719753765507!5m2!1sen!2s"
+        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
 
-</div>
+
+  </div>
 
   <basis core="call" file="footer.inc" />
 
   <script src="js/script.js"></script>
   <script src="/_js/jquery-1.7.2.min.js"></script>
   <script src="[##cms.cms.cdn##]/_js/basiscore-2.30.1.min.js"></script>
+
 
   <script>
     const host = {
@@ -369,40 +365,41 @@ input , form {
   <script>
 
 
-      $(".header_js .menu-list").click(function () {
-          $(".header_js .sidebar").toggleClass("sidebar-toggle");
-      });
+    $(".header_js .menu-list").click(function () {
+      $(".header_js .sidebar").toggleClass("sidebar-toggle");
+    });
 
 
-      $(".header_js .closebtn").click(function () {
-          $(".header_js .sidebar").toggleClass("sidebar-toggle");
-      });
-      $(".header_js .toggleSearch").click(function () {
-          $(".header_js .search-wrapper").toggleClass("search-wrapper-toggle");
-      });
-      $(".poster-def").click(function () {
-          $(this).toggleClass("poster-def-remove");
-      });
+    $(".header_js .closebtn").click(function () {
+      $(".header_js .sidebar").toggleClass("sidebar-toggle");
+    });
+    $(".header_js .toggleSearch").click(function () {
+      $(".header_js .search-wrapper").toggleClass("search-wrapper-toggle");
+    });
+    $(".poster-def").click(function () {
+      $(this).toggleClass("poster-def-remove");
+    });
 
-      $(".swiper-wrapper_js  .swiper-slide").each(function () {
-          $(this).click(function () {
-              $(this).addClass('colormm').siblings().removeClass('colormm');
-          });
+    $(".swiper-wrapper_js  .swiper-slide").each(function () {
+      $(this).click(function () {
+        $(this).addClass('colormm').siblings().removeClass('colormm');
       });
+    });
 
-    
-$(document).ready(function (e) {
-$("#searchform").submit(function (e) {
-$.ajax({
-type: "POST",
-url: "/serach-result.bc",
-data: $("#searchform").serialize(),
-success: function (e) {
-$("#searchResults").html(e)
-}
-}), e.preventDefault()
-})
-})
+
+    $(document).ready(function (e) {
+      $("#searchform").submit(function (e) {
+        $.ajax({
+          type: "POST",
+          url: "/serach-result.bc",
+          data: $("#searchform").serialize(),
+          success: function (e) {
+            $("#searchResults").html(e)
+          }
+        }), e.preventDefault()
+      })
+    })
   </script>
 </body>
+
 </html>
