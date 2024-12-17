@@ -1,0 +1,160 @@
+.about-us {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  margin: auto;
+  /* height: 100vh; */
+  gap: 70px;
+  background-color: #f7f7f7;
+  margin-top: -1000px;
+}
+.description-container {
+  width: 55%;
+  background-color: #f7f7f7;
+  padding: 35px 50px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.description-container h1 {
+  margin-bottom: 20px;
+}
+.right-bordr h1 {
+  font-size: 22px;
+}
+.more {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.more p {
+  font-size: 0.9rem;
+}
+.aboutus-text {
+  /* display: flex; */
+  gap: 40px;
+  margin-top: 20px;
+  column-count: 2;
+}
+.text-cont {
+  line-height: 30px;
+  /* width: 50%; */
+  font-size: 14px;
+  text-align: justify;
+}
+.img-cont {
+  position: absolute;
+  background-color: white;
+  width: 113px;
+  height: 113px;
+  border-radius: 50%;
+  left: 0;
+  transform: translateX(-60%);
+}
+.logo-img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 106px;
+  height: 106px;
+}
+.aboutus-retail-awards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  width: 40%;
+  margin: 20px auto;
+}
+
+.swiper {
+  width: 70%;
+  height: 412px;
+}
+.swiper-slide {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 600px;
+  height: auto;
+}
+.swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.arrrow-btn {
+  display: flex;
+  gap: 7px;
+}
+.about-next {
+  width: 36px;
+  height: 35.692px;
+  border-radius: 0px 15px 15px 0px;
+  background: rgba(207, 182, 44, 0.49);
+  z-index: 1000;
+  position: relative;
+}
+.about-next img,
+.about-prev img {
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+}
+.about-next:hover {
+  background-color: #cfb62c;
+}
+.about-prev {
+  width: 36px;
+  height: 35.692px;
+  border-radius: 15px 0px 0px 15px;
+  background: rgba(207, 182, 44, 0.49);
+  z-index: 1000;
+  position: relative;
+}
+.about-prev:hover {
+  background-color: #cfb62c;
+}
+.right-border a {
+  text-decoration: none;
+  color: black;
+}
+
+@media only screen and (max-width: 680px) {
+  .swiper-mobile {
+    width: 100%;
+  }
+  .img-cont {
+    display: none;
+  }
+  .logo-img {
+    display: none;
+  }
+  .description-container {
+    width: 100%;
+    background-color: white;
+    padding: 0;
+    margin-bottom: 25px;
+  }
+  .text-cont-mobile {
+    display: none;
+  }
+  .text-cont-mobile2 {
+    width: 100%;
+  }
+  .about-us {
+    flex-direction: column;
+    gap: 0;
+  }
+  .arrrow-btn {
+    bottom: -2%;
+    left: 94%;
+  }
+}
+
+

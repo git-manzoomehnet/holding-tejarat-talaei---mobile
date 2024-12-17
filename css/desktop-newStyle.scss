@@ -1,0 +1,62 @@
+.bodyContactUs{
+    form {
+        background-color: transparent;
+        [data-bc-title-container] {
+          display: none;
+        }
+        [data-bc-part-container] {
+          width: 100%;
+        }
+        [data-bc-part-related-cell] {
+          margin: 0;
+          margin-bottom: 13px;
+          input {
+            margin: 0;
+          }
+        }
+        [data-bc-question]:last-child [data-bc-part-related-cell]{
+          margin-bottom: 0;
+        }
+        input,
+        textarea {
+          background-color: #171717 !important;
+          border-radius: 0 !important;
+          border: none !important;
+          border-bottom: 1px solid #818181 !important;
+  
+          font-size: 14px !important;
+          font-weight: 400 !important;
+          line-height: 21.91px !important;
+          text-align: right !important;
+          color: #818181 !important;
+        }
+        textarea{
+          margin: 0;
+        }
+        .responsMsg1 {
+          color: white;
+          position: absolute;
+          top: -27px;
+          font-size: 14px;
+          
+        }
+        .btnsContainer{
+          display: flex;
+          align-items: center;
+          column-gap: 15px;
+        }
+        button{
+          width: 100%;
+          height: 39px;
+          border-radius: 25px 0 0 25px;
+          border: 1px solid #818181;
+          background-color: transparent;
+          outline: none;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24.61px;
+  color: #818181;
+  
+        }
+      }
+}

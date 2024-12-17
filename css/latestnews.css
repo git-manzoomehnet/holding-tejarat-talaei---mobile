@@ -1,0 +1,213 @@
+.news {
+  background: linear-gradient(180deg, #fde7ae 0%, #fff 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@font-face {
+  font-family: "Castellar400";
+  src: url("../fonts/CastellarMTStd.eot");
+  src: url("../fonts/CastellarMTStd.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/CastellarMTStd.woff") format("woff"),
+    url("../fonts/CastellarMTStd.woff2") format("woff2"),
+    url("../fonts/CastellarMTStd.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Telugu MN";
+  src: url("../fonts/TeluguMN-01.eot");
+  src: url("../fonts/TeluguMN-01.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/TeluguMN-01.woff") format("woff"),
+    url("../fonts/TeluguMN-01.woff2") format("woff2"),
+    url("../fonts/TeluguMN-01.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+#wrapper {
+  width: 90%;
+  margin: auto;
+}
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Telugu MN";
+  order: 1;
+  font-size: 65px;
+  font-weight: 250;
+  white-space: nowrap;
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  color: #c6c6c6;
+  position: sticky;
+  bottom: 20%;
+  left: 50px;
+  z-index: 1;
+  margin-top: 30vh;
+}
+.news-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 75%;
+  position: relative;
+  height: 100%;
+}
+
+.firstnews-container {
+  display: flex;
+  gap: 36px;
+}
+.firstnews-container img {
+  border-top-left-radius: var(--Number, 25px);
+  border-bottom-left-radius: var(--Number, 25px);
+  width: 100%;
+  height: 100%;
+}
+.firstnews-container-img {
+  height: auto;
+  /* flex-shrink: 0; */
+}
+.news-link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 20px;
+  border-radius: 15px;
+  background-color: #f0f0f0;
+  margin-top: 30px;
+}
+.news-link a {
+  color: #868686;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: lowercase;
+  text-decoration: none;
+}
+.gray-logo {
+  width: 43px;
+  height: 43px;
+  border-radius: 50%;
+  background-color: white;
+  overflow-y: hidden;
+}
+.number {
+  color: #bdbdbd;
+  text-align: right;
+  font-family: "Castellar400"!important;
+  font-size: 50px;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+.news-img {
+  display: flex;
+  height: auto;
+}
+.img {
+  object-fit: cover;
+  height: 100%;
+  overflow-y: hidden;
+}
+.news-title {
+  transition: transform 0.3s ease-out;
+}
+
+@media only screen and (max-width: 680px) {
+  .news {
+    background: linear-gradient(
+      180deg,
+      rgba(254, 233, 183, 1) 0%,
+      rgba(255, 255, 255, 1) 100%
+    );
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    width: 100%;
+  }
+  .title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: telugu;
+    order: 0;
+    font-size: 65px;
+    font-weight: 250;
+    writing-mode: horizontal-tb;
+    transform: rotate(0);
+    color: #c6c6c6;
+    margin-top: 40px;
+  }
+  .news-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    position: relative;
+    height: 100%;
+  }
+  .firstnews-container {
+    display: flex;
+    border-radius: var(--Number, 25px);
+    box-shadow: 0px 4px 33.9px 0px rgba(221, 221, 221, 0.25);
+    width: 40%;
+    height: 450px;
+  }
+  .second-container {
+    display: flex;
+    border-radius: var(--Number, 25px);
+    box-shadow: 0px 4px 33.9px 0px rgba(221, 221, 221, 0.25);
+    width: 40%;
+    height: 450px;
+  }
+  .third-container {
+    display: flex;
+    border-radius: var(--Number, 25px);
+    box-shadow: 0px 4px 33.9px 0px rgba(221, 221, 221, 0.25);
+    width: 40%;
+    height: 450px;
+  }
+  .fourth-container {
+    display: flex;
+    border-radius: var(--Number, 25px);
+    box-shadow: 0px 4px 33.9px 0px rgba(221, 221, 221, 0.25);
+    width: 40%;
+    height: 450px;
+  }
+  .firstnews-text {
+    width: 200;
+    padding: 45px;
+    background-color: white;
+    overflow-y: hidden;
+  }
+  .second-text {
+    width: 180px;
+    padding: 45px;
+    background-color: white;
+    overflow-y: hidden;
+  }
+  .third-text {
+    padding: 160px;
+    background-color: white;
+    overflow-y: hidden;
+  }
+  .fourth-text {
+    width: 140px;
+    padding: 45px;
+    background-color: white;
+    overflow-y: hidden;
+  }
+  .news-img {
+    overflow: scroll;
+    object-fit: contain;
+  }
+}
+

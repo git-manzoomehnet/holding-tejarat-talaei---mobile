@@ -1,0 +1,408 @@
+<basis core="dbsource" name="db" source="basiscore" lid="1" mid="5" usedforid="9623">
+  <member name="contactus" type="view"/>
+</basis>  
+
+
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="[##cms.cms.cdn##]/css/contactus.css" />
+
+  <link rel="stylesheet" href="[##cms.cms.cdn##]/css/app.css" />
+<link rel="stylesheet" href="[##cms.cms.cdn##]/css/mobile-newStyle.css" />
+
+  <link rel="stylesheet"
+    href="css/bootstrap-icons.min.css"
+  />
+  <title>تماس باما </title>
+  <style>
+.flexcontact{
+  display: flex;
+}
+.flexcontact2{
+  width: 50%;
+}
+.flexcontact_padding {
+  padding: 10px 15px 0;
+}
+.stylefont{
+  text-decoration: none;
+  color: #fff;
+}
+.order-inline{
+
+/*    display: flex; */
+  flex-direction: row;
+  justify-content: space-between;
+}
+body {
+  background-color: black;
+  overflow-x: hidden;
+}
+.flexcontact2 {
+  width: 100%;
+  padding: 15px;
+}
+.header-border , .header-contact{
+  width: 100%;
+}
+_textarea {
+  background-color: #171717;
+  width: 100%;
+  margin: 15px 0;
+}
+input , form {
+  padding: 10px 5px;
+  width: 100%;
+  margin: 15px 0;
+  background-color: #171717;
+}
+
+.submit-cont {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+.flexcontact {
+  display: flex;
+  flex-direction: column;
+}
+.frame{
+  margin-top: 75px;
+}
+
+.contact-us{
+  flex-wrap: wrap;
+  height: auto;
+}
+.contact-us .header-contact{
+  width: 50%!important;
+}
+
+.header-contact.header-border{
+  margin: auto;
+  width: 50%;
+}
+
+.header-border{
+  display: none;
+}
+.form-cont{
+  height: auto;
+}
+.h{
+  margin-top: 0;
+}
+  </style>
+</head>
+<body class="contactBody">
+  <basis core="call" file="header.inc" />
+
+  <div class="search"></div>
+  <div id="sidebar-container"></div>
+
+  <div class="header-border"></div>
+  <div id="sidebar-container"></div>
+
+  <div class="frame"><img src="[##cms.cms.cdn##]/images/contactus-banner.jpg" /></div>
+
+  <h2 class="h">تماس با ما</h2>
+
+  <div class="contact-us">
+    <div class="header-contact">
+      <h2>دسترسی</h2>
+      <div>
+        <div class="sub-header">
+          <p class="h2">ادرس</p>
+          <basis core="print" datamembername="db.contactus">
+              <face filter="TypeID=244">
+      @Answer
+        </div>
+      </face>
+  </basis>
+  <div class="order-inline">
+      <div class="sub-header">
+          <p class="h2">فکس</p>
+          <basis core="print" datamembername="db.contactus">
+              <face filter="TypeID=241">
+          <p> @Answer</p>
+          </face>
+          </basis>
+        </div>
+        <div class="sub-header">
+          <p class="h2">تلفن</p>
+          <basis core="print" datamembername="db.contactus">
+              <face filter="TypeID=240">
+          <p> @Answer</p>
+          </face>
+          </basis>
+        </div>
+  </div>
+<!--    <div class="order-inline">
+   
+          <p class="h2">دریافت آدرس</p>
+   
+        
+        <div class="qr">
+            <img src="/images/qr.png" />
+     
+        </div>
+  </div>
+-->
+       
+      </div>
+    </div>
+
+    <div class="header-contact">
+      <div class="header-border">
+
+        <h2>شبکه اجتماعی</h2>
+        <div>
+      </div>
+        <div class="sub-header">
+          <p class="h2">اینستاگرام</p>
+          <basis core="print" datamembername="db.contactus">
+              <face filter="text='اینستاگرام'">
+                  @largetext
+                  <br>
+                  </face>
+                  </basis>
+       
+        </div>
+        <div class="sub-header">
+          <p class="h2">لینکدین</p>
+          <basis core="print" datamembername="db.contactus">
+              <face filter="text='لینکدین'">
+                  @largetext
+                  <br>
+              </face>
+              </basis>
+        </div>
+      </div>
+    </div>
+
+    <div class="header-contact">
+      <h2>وب سایت</h2>
+      <div class="links">
+          <basis core="print" datamembername="db.contactus">
+              <face filter="TypeID=243">
+                  <a class="stylefont" href="@answer">
+                      <p>@Answer</p>
+
+                  </a>
+                  
+                  </face>
+                  </basis>
+
+      </div>
+    </div>
+  </div>
+<div class="flexcontact">
+
+  <div class="form-cont flexcontact2">
+      <h2 class="h">فرم ارسال پیام</h2>
+      <p>
+        لطفا پیام مورد نظر خود را برای ما ثبت و ارسال بفرمایید. جواب مربوطه برای
+        شما ارسال می گردد.
+      </p>
+      <form name="myForm" class="homeForm1" action="" onsubmit="return validateForm()" method="post">
+        <basis core="schema" run="atclient"
+          schemaUrl="/schema/domainform/4EE29C18-DCB6-4B38-8660-6A3133312159/D289FD91-2C12-4A16-8E4E-E7AE5CABC45C/fa/فرم-تماس-با-ما"
+          displayMode="new" button="[data-btn-add1]" resultSourceId="demo.data1" onRendered="renderFn1">
+        </basis>
+        <basis core="callback" run="AtClient" triggers="demo.data1" method="onSource1"></basis>
+        <basis core="api" url="/schema/domainform/4EE29C18-DCB6-4B38-8660-6A3133312159/fa/editobject" method="post"
+          run="atclient"
+          body="object_edit={##edit.object1.value##}&captcha={##edit.object1.captcha##}&captchaid={##edit.object1.captchaid##}"
+          content-type="application/x-www-form-urlencoded" triggers="edit.object1" if="{##edit.object1##}"
+          OnProcessed="OnProcessedEditObject1">
+        </basis>
+        <div data-bc-question="" class="qclass8 w-fit">
+          <div class="responsMsg1 responsMsg">
+            <span>فرم با موفقیت ثبت شد.</span>
+          </div>
+          <div id="requestBox" class="captchaContainerclass captcha-sefaresh2" style="margin-bottom: 20px"
+            data-bc-answer-container="" data-bc-schema-info-multi="0" data-bc-schema-info-word="58"
+            data-bc-schema-info-part="1" data-bc-schema-info-part-0-type="text">
+            <basis core="dbsource" source="trust_login" name="captcha1" triggers="cms.reload1" run="atclient">
+              <member name="code1" type="scalar" request="captcha"></member>
+            </basis>
+            <input type="text" class="codeinputm" name="captcha" placeholder="عبارت امنیتی  زیر را وارد نمایید.">
+       <div class="btnsContainer">
+
+         <basis datamembername="captcha1.code1" core="print" run="atclient">
+           <face>
+             <script type="text/template">
+
+                     <span class="captcha-sefaresh">
+                         <img src="/@captcha@" width="88" height="44" class="captcha-sefaresh"
+                             alt="captcha" title="captcha" />
+                         <input type="hidden" name="captchaid" value="@captcha@" />
+                     </span>
+
+                 <img src="[##cms.cms.cdn##]/assets/image/cached.png" class="refressh cursor-pointer refressh1" run="atclient" bc-triggers="click" bc-name="cms.reload1" />
+               </script>
+           </face>
+         </basis>
+         <button class=""
+           type="submit" data-btn-add1 data-btn-submit="">
+           <span >
+             ثبت</span>
+         </button>
+       </div>
+       </div>
+        </div>
+      </form>
+    </div>
+
+
+<div class="flexcontact2 flexcontact_padding">
+  <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3241.2408020765088!2d51.37419579999999!3d35.6710723!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzXCsDQwJzE1LjkiTiA1McKwMjInMjcuMSJF!5e0!3m2!1sen!2s!4v1719753765507!5m2!1sen!2s"
+  width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+   
+
+</div>
+
+  <basis core="call" file="footer.inc" />
+
+  <script src="js/script.js"></script>
+  <script src="/_js/jquery-1.7.2.min.js"></script>
+  <script src="[##cms.cms.cdn##]/_js/basiscore-2.30.1.min.js"></script>
+
+  <script>
+    const host = {
+      debug: !1,
+      settings: {
+        "connection.web.trust_login": "https://basispanel.ir/apicms",
+        "connection.web.basiscore": "https://basispanel.ir/apicms",
+        "connection.web.media": "https://basispanel.ir/apicms",
+        "default.dbsource.verb": "post",
+        "default.call.verb": "get",
+        "default.viewCommand.groupColumn": "prpid",
+        "default.dmnid": "4855",
+        "default.binding.regex": "\\{##([^#]*)##\\}",
+      },
+    };
+
+
+    function onSource1(args) {
+      console.log("onSource");
+      const captcha = document.querySelector(
+        ".homeForm1 #requestBox input[name='captcha']"
+      ).value;
+      const captchaid = document.querySelector(
+        ".homeForm1 #requestBox input[name='captchaid']"
+      ).value;
+      const stringJson = JSON.stringify(args.source?.rows[0]);
+      console.log("stringJson", stringJson);
+      $bc.setSource("edit.object1", {
+        value: stringJson,
+        captcha: captcha,
+        captchaid: captchaid,
+      });
+    }
+
+    let responsMsg = document.querySelector(".responsMsg1");
+    let responsMsgIn = document.querySelector(".responsMsg1 span");
+
+    async function OnProcessedEditObject1(args) {
+      console.log("OnProcessedEditObject1");
+      const response = args.response;
+      const json = await response.json();
+
+      if (json.errorid == 6) {
+        console.log(json);
+        responsMsgIn.innerHTML = "فرم با موفقیت ثبت شد.";
+        responsMsg.style.display = "block";
+
+        setTimeout(() => {
+          responsMsg.style.display = "none";
+        }, 2000);
+      }
+      if (json.errorid == 4) {
+        console.log(json);
+        responsMsgIn.innerHTML = "لطفا کپچا را به درستی وارد کنید.";
+
+        responsMsg.style.display = "block";
+
+        setTimeout(() => {
+          responsMsg.style.display = "none";
+        }, 2000);
+      }
+    }
+
+    function renderFn1(params) {
+
+      let questions = document.querySelectorAll(
+        ".homeForm1 div[data-bc-question]"
+      );
+      questions.forEach((element) => {
+        element.classList.add("afterStar");
+
+        let title = element.querySelector(
+          ".homeForm1 [data-bc-question-title]"
+        );
+        let qInput = element.querySelector(".homeForm1 input");
+        let qTxtArea = element.querySelector(".homeForm1 _textarea");
+        if (title) {
+          title = element.querySelector(
+            ".homeForm1 [data-bc-question-title]"
+          ).innerHTML;
+          if (qInput) {
+            qInput.setAttribute("placeholder", title);
+          } else if (qTxtArea) {
+            qTxtArea.setAttribute("placeholder", title);
+          }
+        }
+        console.log("q", qInput);
+      });
+   
+
+
+
+
+    }
+  </script>
+  <script>
+
+
+      $(".header_js .menu-list").click(function () {
+          $(".header_js .sidebar").toggleClass("sidebar-toggle");
+      });
+
+
+      $(".header_js .closebtn").click(function () {
+          $(".header_js .sidebar").toggleClass("sidebar-toggle");
+      });
+      $(".header_js .toggleSearch").click(function () {
+          $(".header_js .search-wrapper").toggleClass("search-wrapper-toggle");
+      });
+      $(".poster-def").click(function () {
+          $(this).toggleClass("poster-def-remove");
+      });
+
+      $(".swiper-wrapper_js  .swiper-slide").each(function () {
+          $(this).click(function () {
+              $(this).addClass('colormm').siblings().removeClass('colormm');
+          });
+      });
+
+    
+$(document).ready(function (e) {
+$("#searchform").submit(function (e) {
+$.ajax({
+type: "POST",
+url: "/serach-result.bc",
+data: $("#searchform").serialize(),
+success: function (e) {
+$("#searchResults").html(e)
+}
+}), e.preventDefault()
+})
+})
+  </script>
+</body>
+</html>

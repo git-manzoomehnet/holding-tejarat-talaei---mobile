@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>درباره‌ما</title>
+ <meta name="description" content="درباره‌ما">
+    <link href="css/app.css" rel="stylesheet" />
+    <link href="css/js_slider.css" rel="stylesheet" />
+    <link href="css/animate.min.css" rel="stylesheet" />
+    <link href="css/sppagebuilder.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/styleNew.css" />
+    <script src="js/jquery.min.js"></script>
+    <script src="js/sppagebuilder.js" defer> </script>
+    <script src="js/js_slider.js"></script>
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel='stylesheet' id='malgre-main-css' href='css/main.min.css' type='text/css' media='all' />
+    <link rel='stylesheet' id='malgre-core-style-css' href='css/malgre-core.min.css' type='text/css' media='all' />
+    <style>
+        .swiper-slide-img{
+            min-height: unset;
+        }
+    </style>
+    <script type='text/javascript' src='js/jquery.min.js?ver=3.7.0' id='jquery-core-js'></script>
+    <script type='text/javascript' src='js/jquery-migrate.min.js?ver=3.4.1' id='jquery-migrate-js'></script>
+</head>
+<basis core="dbsource" name="db" source="basiscore" lid="1" mid="1" usedforid="2355331">
+    <member name="about" type="view"/>
+</basis>  
+
+<basis core="dbsource" name="db"  source="media" lid="1" sourcemid="1" usedforid="2355331">
+    <member name="aboutGallery" type="list" format="4"/>
+</basis>
+
+<basis core="dbsource" name="db" source="basiscore" lid="1" mid="1" catid="208680">
+    <member name="about-holding" type="list" size="507x265" propertyid="7244"/>
+</basis>
+
+<basis core="dbsource" name="db"  source="media" lid="1" sourcemid="1" usedforid="2355331">
+    <member name="aboutVideo" type="list" format="3"/>
+</basis>
+
+<basis core="dbsource" name="db"  source="media" lid="1" sourcemid="1" usedforid="2355331">
+    <member name="poster" type="list" format="4" postsql="select * from [db.poster] where ord=1020"/>
+</basis>
+
+<basis core="dbsource" name="db" source="basiscore" lid="1" mid="1" usedforid="2355388">
+    <member name="about-sec4" type="view"  postsql="select * from [db.about-sec4] where typeid=250"/>
+</basis>  
+
+<basis core="dbsource" name="db" source="basiscore" lid="1" mid="11" catid="208695">
+    <member name="manager" type="list" size="367x367"  propertyid="2732,2739"/>
+</basis>
+
+
+<body>
+    <basis core="call" file="header.inc"></basis>
+    <div class="clr"></div>
+    <main class="margin-180">
+
+        <section class="about-section">
+
+            <!-- <div class="img-box"><img src="images/logo-about-us-section1.svg" class="logocenter1" alt=""></div> -->
+
+            <div class="border-box">
+                <basis core="print" datamembername="db.about">
+                    <face filter="typeid=150">
+                        <p class="titr-about">@answer</p>
+                    </face>
+                </basis>
+                <basis core="print" datamembername="db.about">
+                    <face filter="prpid=7244">
+                <p> @answer
+                </p>
+</face>
+</basis>
+            </div>
+        </section>
+        <section>
+
+            <section id="sp-main-body">
+
+                <div class="container">
+                    <div class="container-inner">
+
+
+                        <div class="row">
+
+                            <main id="sp-component" class="col-lg-12 ">
+                                <div class="sp-column ">
+                                    <div id="system-message-container" aria-live="polite">
+                                    </div>
+
+
+
+                                    <div class='item-page '>
+                                        <meta itemprop='inLanguage' content='it-IT' />
+                                        <div class="row ">
+                                            <div>
+                                                <div>
+                                                    <div id="sp-page-builder"
+                                                        class="sp-page-builder sppb-article-page-wrapper">
+                                                        <div class="page-content">
+                                                            <section id="section-id-1674746441809" class="sppb-section">
+                                                                <div class="sppb-row-container">
+                                                                    <div class="sppb-row">
+                                                                        <div class="sppb-col-md-12"
+                                                                            id="column-wrap-id-1671034719115">
+                                                                            <div id="column-id-1671034719115"
+                                                                                class="sppb-column">
+                                                                                <div class="sppb-column-addons">
+                                                                                    <div id="sppb-addon-wrapper-1671034841852"
+                                                                                        class="sppb-addon-wrapper">
+                                                                                        <div id="sppb-addon-1671034841852"
+                                                                                            class="clearfix ">
+                                                                                            <div id="sppb-sp-slider-1671034841852"
+                                                                                                data-id="sppb-sp-slider-1671034841852"
+                                                                                                class="sppb-addon-sp-slider sp-slider  dot-controller-line dot-controller-position-bottom_right arrow-position-bottom_left "
+                                                                                                data-height="549px"
+                                                                                                data-height-sm="549px"
+                                                                                                data-height-xs="158px"
+                                                                                                data-slider-animation="slide"
+                                                                                                data-autoplay="true"
+                                                                                                data-interval="5000"
+                                                                                                data-timer="false"
+                                                                                                data-speed="800"
+                                                                                                data-dot-control="true"
+                                                                                                data-arrow-control="true"
+                                                                                                data-indecator="true"
+                                                                                                data-arrow-content="icon_only"
+                                                                                                data-slide-count="false"
+                                                                                                data-dot-style="line"
+                                                                                                data-pause-hover="false">
+                                                                                                <basis core="print" datamembername="db.aboutGallery">
+                                                                                                    <face filter="ord=1010">
+
+                                                                                                        <div id="sp-slider-item-1671034841852-num-0-key"
+                                                                                                        class="sp-item  active slider-content-vercally-center">
+                                                                                                        <div
+                                                                                                            class="sppb-container">
+                                                                                                            <div
+                                                                                                                class="sppb-row">
+                                                                                                                <div
+                                                                                                                    class="sppb-col-sm-12">
+                                                                                                                    <div
+                                                                                                                        class="sp-slider-content-align-center">
+                                                                                                                    </div>
+                                                                                                                </div>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                        <div class="sp-background"
+                                                                                                            style="background-image: url(/@largeimg);">
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                  
+                                                                                                    </face>
+                                                                                                </basis>
+
+                                                                                                
+                                                                                            
+                                                                                                
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </section>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+
+                                            </div>
+                                        </div>
+
+
+
+                                        <div class="row ">
+                                            <div>
+                                            </div>
+                                        </div>
+
+
+
+                                    </div>
+
+                                </div>
+                            </main>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+        </section>
+
+        <section class="box2-sec">
+           <basis core="repeater" name="rep" datamembername="db.about-holding">
+
+            <basis core="dbsource" name="db" source="basiscore" lid="2" mid="1" usedforid="[##rep.current.id##]">
+                <member name="enname" type="view" postsql="select * from [db.enname] where typeid=150"/>
+            </basis>  
+            <basis core="print" datamembername="rep.current">
+                <face>
+                    <div class="twobox1">
+                        <div class="twobox">
+                            <img src="/@00507x00265prp" alt="@title">
+                            <span class="en-name">[##db.enname.answer##]</span>
+                            <span class="fa-name">@title</span>
+                        </div>
+        
+                        <div class="hover-text">
+                            <p class="hover-titr">@title</p>
+        
+                            <div class="text-hover-box">
+                                <p>
+                                   @prp_7244
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </face>
+            </basis>
+        </basis>
+        </section>
+        <section class="video-cover">
+
+            <basis core="print" datamembername="db.aboutVideo">
+                <face>
+                    <video width="100%" height="524" poster="[##db.poster.largeimg##]">
+                        <source src="/@largeimg" type="video/mp4">
+        
+                    </video>
+                    <a class="btn-vid"></a>
+                </face>
+            </basis>
+           
+        </section>
+
+
+
+        <section class="about-twobox">
+
+            <img src="images/logo-mainpage-about-us1.png" class="logo-center" alt="">
+            <basis core="print" datamembername="db.about-sec4">
+                <face filter="rownumber=1">
+                    <div class="box-ab1">
+                        <span class="titr-abt">
+                           @text
+                        </span>
+                        <p>
+                           @largetext
+                             
+                        </p>
+                    </div>
+                </face>
+            </basis>
+           
+            <basis core="print" datamembername="db.about-sec4">
+                <face filter="rownumber=2">
+            <div class="box-ab1 box-ab2">
+                <span class="titr-abt">
+                    @text
+                </span>
+                <p>
+                   @largetext
+                </p>
+            </div>
+            </face>
+            </basis>
+        </section>
+
+
+        <section class="managment-box">
+
+            <div class="boxes-manager">
+                <p class="titr-box">معرفی مدیران</p>
+
+                <div id="simpleModal" class="modal">
+                    <div class="modal-content">
+                        <span class="closeBtn">×</span>
+                        <!-- Swiper modal -->
+                        <div id="swiper-container-modal" class="swiper-container-modal">
+                            <div class="swiper-wrapper">
+                                <basis core="print" datamembername="db.manager">
+                                    <face>
+                                <div class="swiper-slide swiper-slide-modal">
+                                    <div class="swiper-zoom-container">
+                                        <div class="border-manage">
+                                            <div class="top-pop">
+                                                <img class="swiper-lazy-modal" src="/@00367x00367prp"
+                                                    loading="lazy" />
+                                                <div class="text-managerr">
+                                                    <div>
+                                                        <p>@prp_2732</p>
+                                                        <p>@title</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="text-manage-pop">
+@prp_2739
+                                            </div>
+                                        </div>
+                                        <div class="swiper-lazy-preloader"></div>
+                                    </div>
+                                </div>
+                </face>
+                </basis>
+                            </div>
+                            <!-- Add Pagination -->
+                            <div id="swiper-pagination-modal" class="swiper-pagination"></div>
+                            <!-- Add Pagination -->
+                            <div id="swiper-button-next-modal" class="swiper-button-next"></div>
+                            <div id="swiper-button-prev-modal" class="swiper-button-prev"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Swiper -->
+                <div class="swiper swiper-container-main">
+                    <div class="swiper-wrapper">
+
+                        <basis core="print" datamembername="db.manager">
+                            <face>
+                                <div class="swiper-slide minimum-height">
+                                    <img class="swiper-slide-img" src="/@00367x00367prp">
+        
+                                    <div class="text-manager">
+                                        <div>
+                                            <p>@prp_2732</p>
+                                            <p>@title</p>
+                                        </div>
+                                        <!-- <img src="images/plus.png" alt=""> -->
+                                    </div>
+        
+                                </div>
+                            </face>
+                        </basis>
+                      
+           
+                        
+                    </div>
+                    <!-- Add Pagination -->
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <section class="loh-sec">
+
+            <p class="titr-box">تندیس ها</p>
+            <div class="swiper mySwiper lohswiper">
+                <div class="swiper-wrapper">
+
+<basis core="print" datamembername="db.aboutGallery">
+    <face filter="ord=1001">
+        <div class="swiper-slide">
+            <img src="/@largeimg" />
+                <p>@name</p>
+        </div>
+
+    </face>
+</basis>
+                 
+
+                </div>
+
+                <div class="next-prev">
+                    <div class="next">
+                        <div class="awards-prev">قبلی</div>
+                        <span class="line-arrow"></span>
+                    </div>
+                    <div class="prev">
+                        <span class="line-arrow"></span>
+                        <div class="awards-next">بعدی</div>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </section>
+
+
+
+
+
+        <section class="cer-sec">
+
+            <p class="titr-box">گواهینامه ها</p>
+            <section
+                class="elementor-section elementor-top-section elementor-element elementor-element-682370e elementor-section-full_width elementor-section-height-default elementor-section-height-default qodef-elementor-content-no qodef-angled-shape-top-no qodef-angled-shape-bottom-no"
+                data-id="682370e" data-element_type="section"
+                data-settings="{"background_background":"classic"}">
+                <div class="elementor-container elementor-column-gap-default">
+                    <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-12b0543"
+                        data-id="12b0543" data-element_type="column">
+                        <div class="elementor-widget-wrap elementor-element-populated">
+                            <div class="elementor-element elementor-element-0ca016e elementor-widget elementor-widget-malgre_core_interactive_link_showcase"
+                                data-id="0ca016e" data-element_type="widget"
+                                data-widget_type="malgre_core_interactive_link_showcase.default">
+                                <div class="elementor-widget-container">
+                                    <div
+                                        class="qodef-shortcode qodef-m anchor qodef-interactive-link-showcase qodef-layout--list ">
+                                        <div class="qodef-m-items">
+                                            <basis core="print" datamembername="db.aboutGallery">
+                                                <face filter="ord=1002">
+                                            <div itemprop="url" class="qodef-m-item qodef-e"
+                                              >
+                                                <span class="qodef-e-title"> @name<span
+                                                        class="qodef-e-subtitle-line"></span></span>
+
+                                                </div>
+                                   </face>
+                                   </basis>
+                                        </div>
+
+
+                                        <div class="qodef-m-images">
+                                            <basis core="print" datamembername="db.aboutGallery">
+                                                <face filter="ord=1002">
+                                            <div class="qodef-m-image" style="background-image: url(/@largeimg)">
+                                                <img fetchpriority="high" fetchpriority="high" width="2500"
+                                                    height="1731" src="/@largeimg" class="attachment-full size-full"
+                                                    alt="" decoding="async"
+                                                    srcset="/@largeimg"
+                                                    sizes="(max-width: 2500px) 100vw, 2500px" /> </div>
+                                                    </face>
+                                                    </basis>
+                                           
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </section>
+    </main>
+
+    <basis core="call" file="footer.inc"></basis>
+
+    <!-- Swiper JS -->
+    <script src="js/swiper-bundle.min.js"></script>
+    <script>
+window.addEventListener("scroll", function () {
+  const header = document.querySelector("header");
+
+  if (window.scrollY > 0) {
+    header.classList.add("header-scrolled");
+  } else {
+    header.classList.remove("header-scrolled");
+  }
+});
+
+        var swiper = new Swiper('.swiper-container-main', {
+            autoHeight: true, //enable auto height
+            slidesPerView: 3,
+            //runCallbacksOnInit: true,
+            observer: true,
+            observeParents: true,
+            observeChildren: true,
+            spaceBetween: 0,
+
+
+            loop: true,
+            preloadImages: false,
+            // Enable lazy loading
+            lazy: true,
+            lazy: {
+                loadPrevNext: true,
+            },
+
+            keyboard: {
+                enabled: true,
+            },
+
+
+            loop: true,
+
+
+        });
+
+        // swiper - modal
+        var swiperModal = new Swiper('.swiper-container-modal', {
+
+
+            lazy: true,
+            lazy: {
+                loadPrevNext: true,
+                loadOnTransitionStart: true,
+            },
+
+
+
+
+        });
+
+
+        // Create a Modal With HTML, CSS & JavaScript (https://www.youtube.com/watch?v=6ophW7Ask_0)
+        const nonModalGalleryImgContainer = document.querySelector(
+            '.swiper-container-main'
+        );
+        const nonModalGalleryImgWrapper = nonModalGalleryImgContainer.querySelector(
+            '.swiper-wrapper'
+        );
+        // Get modal element
+        var modal = document.getElementById('simpleModal');
+        // Get open modal button
+        var modalBtn = document.querySelectorAll('.swiper-slide-img'); // select all swiper-slides (outside modal)
+        // close button
+        var closeBtn = document.getElementsByClassName('closeBtn')[
+            0]; // returns an array... just get first one (only one element with this class)
+
+        function openModal() {
+            // prevent page scrolling when modal open: https://css-tricks.com/prevent-page-scrolling-when-a-modal-is-open/
+            // When the modal is shown, we want a fixed body
+
+
+            let swiperIndexPos = swiper.activeIndex;
+            let body = document.querySelector("body");
+            swiperModal.slideTo(swiperIndexPos);
+            // swiperModal.lazy.load(); // need to initailize lazy load if modal opened
+            modal.style.display = 'block';
+            body.style.background = "rgba(0,0,0,.2)"
+            swiper.keyboard.disable();
+            swiperModal.keyboard.enable();
+            document.addEventListener('keydown', closeModalWithKeyboard);
+        }
+
+        modalBtn.forEach(element => {
+            element.addEventListener('click',
+                openModal); // add an click event listener for each swiper-slide (outside the modal)
+        })
+
+        function openModalWithKeyboard(event) {
+            if (event.key === 'Enter') {
+                openModal();
+            }
+        }
+
+        // open modal if non-modal image wrapper is in focus and enter is hit
+        nonModalGalleryImgContainer.addEventListener('keydown', openModalWithKeyboard);
+
+
+        function closeModal() {
+            // prevent page scrolling when modal open: https://css-tricks.com/prevent-page-scrolling-when-a-modal-is-open/
+            // When the modal is hidden...
+            let body = document.querySelector("body");
+
+            body.style.background = "unset"
+            document.body.style.position = '';
+            document.body.style.top = '';
+
+            let swiperModalIndexPos = swiperModal.activeIndex;
+            swiper.slideTo(swiperModalIndexPos);
+            modal.style.display = 'none';
+            swiperModal.keyboard.disable();
+            swiper.keyboard.enable();
+            document.removeEventListener('keydown', closeModalWithKeyboard);
+        }
+
+        // Listen for close click
+        closeBtn.addEventListener('click', closeModal);
+
+        // close modal using Escape key 
+        function closeModalWithKeyboard(event) {
+            if (event.key === 'Escape') {
+                closeModal();
+            }
+        }
+
+        var swiper = new Swiper(".lohswiper", {
+
+            navigation: {
+                nextEl: ".loh-next",
+                prevEl: ".loh-prev",
+            },
+
+        });
+    </script>
+
+
+
+    <script type='text/javascript' id='malgre-main-js-js-extra'>
+        /* <![CDATA[ */
+        var qodefGlobal = {
+            "vars": {
+                "adminBarHeight": 0,
+                "0": -100,
+                "topAreaHeight": 0,
+                "restUrl": "https:\/\/www.s4.studio\/wp-json\/",
+                "restNonce": "06d7a960ab",
+                "paginationRestRoute": "malgre\/v1\/get-posts",
+                "headerHeight": 100,
+                "mobileHeaderHeight": 70
+            }
+        };
+        /* ]]> */
+    </script>
+    <script type='text/javascript' src='js/main.min.js' id='malgre-main-js-js'></script>
+    <script type='text/javascript' src='js/malgre-core.min.js' id='malgre-core-script-js'></script>
+    <script src="js/script.js"></script>
+
+    <script>
+        const videoElement = document.querySelector('video');
+        const playPauseButton = document.querySelector('.btn-vid');
+
+        playPauseButton.addEventListener('click', () => {
+            playPauseButton.classList.toggle('playing');
+            if (playPauseButton.classList.contains('playing')) {
+                videoElement.play();
+                playPauseButton.style.display = "none";
+                videoElement.setAttribute('controls', '');
+            } else {
+                videoElement.pause();
+                playPauseButton.style.display = "block";
+
+            }
+        });
+
+        videoElement.addEventListener('ended', () => {
+            playPauseButton.classList.remove('playing');
+        });
+
+
+
+        const logocenter = document.querySelector('.logo-center');
+        const abbox = document.querySelector('.box-ab1');
+        const logocenter1 = document.querySelector('.logocenter1');
+        const abboxx = document.querySelector('.about-section');
+
+        // abbox.addEventListener('mouseenter', () => {
+        //     logocenter.src = 'images/logo-mainpage-about-us1.png';
+
+        // });
+        // abbox.addEventListener('mouseleave', () => {
+        //     logocenter.src = 'images/logo-mainpage-about-us.svg';
+
+        // });
+
+        // abboxx.addEventListener('mouseenter', () => {
+        //     logocenter1.src = 'images/logo-mainpage-about-us1.png';
+
+        // });
+        // abboxx.addEventListener('mouseleave', () => {
+        //     logocenter1.src = 'images/logo-about-us-section1.svg';
+
+        // });
+
+
+
+
+
+
+        // const abbox1 = document.querySelector('.box-ab2');
+
+        // abbox1.addEventListener('mouseenter', () => {
+        //     logocenter.src = 'images/logo-mainpage-about-us1.png';
+
+        // });
+        // abbox1.addEventListener('mouseleave', () => {
+        //     logocenter.src = 'images/logo-mainpage-about-us.svg';
+
+        // });
+
+        document.addEventListener("DOMContentLoaded", function () {
+            swiper = new Swiper(".lohswiper", {
+                slidesPerView: 1,
+                spaceBetween: 30,
+                loop: true,
+                navigation: {
+                    nextEl: ".awards-next",
+                    prevEl: ".awards-prev",
+                },
+            });
+        });
+    </script>
+          <script src="/_js/jquery-1.7.2.min.js"></script>
+        <script>
+    
+          $(".header_js .menu-list").click(function(){
+      $(".header_js .sidebar").toggleClass("sidebar-toggle");
+    });
+    
+    
+    $(".header_js .closebtn").click(function(){
+      $(".header_js .sidebar").toggleClass("sidebar-toggle");
+    });
+    $(".header_js .toggleSearch").click(function(){
+      $(".header_js .search-wrapper").toggleClass("search-wrapper-toggle");
+    });
+    $(".poster-def").click(function(){
+      $(this).toggleClass("poster-def-remove");
+    });
+    
+    $(".swiper-wrapper_js  .swiper-slide").each(function () {
+     $(this).click(function () {
+     $(this).addClass('colormm').siblings().removeClass('colormm');
+     });
+     });
+
+
+      
+ $(document).ready(function (e) {
+ $("#searchform").submit(function (e) {
+ $.ajax({
+ type: "POST",
+ url: "/serach-result.bc",
+ data: $("#searchform").serialize(),
+ success: function (e) {
+ $("#searchResults").html(e)
+ }
+ }), e.preventDefault()
+ })
+ })
+
+
+
+
+
+
+
+        </script>
+</body>
+
+</html>

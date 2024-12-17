@@ -1,0 +1,841 @@
+<basis core="dbsource" name="db" source="basiscore" lid="1" mid="1" catid="208674">
+    <member name="lastedNews" type="list" size="349x211" propertyid="7244" 
+    postsql=" select *, SUBSTR(prp_7244, 1,230-CHARINDEX(' ', REVERSE(SUBSTR(prp_7244, 1, 230)))) || '...' as substr from [db.lastedNews]"/>
+</basis>
+
+
+<basis core="dbsource" name="db" source="basiscore" lid="1" mid="1" usedforid="2355331">
+    <member name="def-about" type="view"/>
+</basis>  
+<basis core="dbsource" name="db" source="basiscore" lid="1" mid="1" usedforid="2355269">
+    <member name="title" type="view"/>
+</basis>  
+<basis core="dbsource" name="db"  source="media" lid="1" sourcemid="1" usedforid="2355331">
+    <member name="aboutGallery" type="list" format="4"/>
+</basis>
+
+<basis core="dbsource" name="db" source="basiscore" lid="1" mid="1" usedforid="2355339">
+    <member name="def-retail" type="view"/>
+</basis>  
+
+<basis core="dbsource" name="db"  source="media" lid="1" sourcemid="1" usedforid="2355339">
+    <member name="retailGallery" type="list" format="4"/>
+</basis>
+<basis core="dbsource" name="db" source="basiscore" lid="1" mid="1" usedforid="2355339">
+    <member name="def-retail" type="view"/>
+</basis>  
+<basis core="dbsource" name="db"  source="media" lid="1" sourcemid="1" usedforid="2355339">
+    <member name="retailGallery" type="list" format="4"/>
+</basis>
+<basis core="dbsource" name="db" source="basiscore" lid="1" mid="1" catid="208678">
+    <member name="def-mahname" type="list" size="264x288" order="id desc"  propertyid="7244,7248"/>
+</basis>
+<basis core="dbsource" name="db" source="media" lid="1" sourcemid="1" usedforid="2355269">
+    <member name="defGalleryy" type="list" />
+</basis>
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/homepage.css" />
+    <link rel="stylesheet" href="css/latestnews.css" />
+    <link rel="stylesheet" href="css/aboutus.css" />
+    <link rel="stylesheet" href="css/retailshow.css" />
+    <link rel="stylesheet" href="css/retailawards.css" />
+    <link rel="stylesheet" href="css/mahnameh.css" />
+    <link rel="stylesheet" href="css/cricle.css" />
+    <link rel="stylesheet" href="css/bootstrap-icons.min.css" />
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/scroll.css" />
+    <link rel="stylesheet" href="css/app.css" />
+    <title>تجارت طلایی</title>
+    <style>
+         
+  .swiper-wrapper_js .detail {
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    white-space: nowrap;
+}
+            .swiper-wrapper_js  .detail img{
+                width: 19px;
+                height: 19px;
+
+}
+            .swiper-child{
+                color: #000;
+                text-decoration: none;
+                font-size: 14px;
+            }
+            
+  
+ .swiper-child  .swiper-next{
+    height: auto;
+    border-radius: 0 0 20px 20px;
+    position: relative;
+    padding: 16px 18px 23px;
+    text-align: right;
+    min-height: 80px;
+    
+    max-width: 264px;
+}
+ 
+.swiper-child  .swiper-next span{
+   
+    
+    position: absolute;
+    right: 41px;
+    top: -14px;
+}
+.swiper-child:nth-child(4n+1)  .swiper-next{
+background-color: white;
+}
+.swiper-child:nth-child(4n+1)  .swiper-next::before{
+width: 89px;
+    height: 79px;
+    content: '';
+    position: absolute;
+    top: 0;
+    transform: translateY(-50%);
+    right: 3%;
+    background: url(/images/circle-white.png) no-repeat;
+}
+.swiper-child:nth-child(4n+2)  .swiper-next::before{
+    width: 89px;
+    height: 79px;
+    content: '';
+    position: absolute;
+    top: 0;
+    transform: translateY(-50%);
+    right: 3%;
+    background: url(/images/circle-yellow.png) no-repeat;
+
+}
+.swiper-child:nth-child(4n+2)  .swiper-next{
+    background-color: #FFFFD1;
+}   
+.swiper-child:nth-child(4n+3)  .swiper-next::before{
+    width: 89px;
+    height: 79px;
+    content: '';
+    position: absolute;
+    top: 0;
+    transform: translateY(-50%);
+    right: 3%;
+    background: url(/images/circle-pink.png) no-repeat;
+
+}
+
+.swiper-child:nth-child(4n+3)  .swiper-next{
+    background-color: #F0C5D5;
+}
+.swiper-child:nth-child(4n)  .swiper-next::before{
+    width: 89px;
+    height: 79px;
+    content: '';
+    position: absolute;
+    top: 0;
+    transform: translateY(-50%);
+    right: 3%;
+    background: url(/images/circle-blue.png) no-repeat;
+
+}
+
+
+.swiper-child:nth-child(4n)  .swiper-next{
+    background-color: #B2D9EA;
+}
+.search-wrapper.search-wrapper-toggle{
+height: fit-content;
+}
+        @media only screen and (max-width: 680px){
+            .pin-spacer .text {
+    
+        width: 100%  !important;
+        padding: 0 !important;
+    }
+    .description-container h1 {
+    
+        font-size: 20px !important;
+    
+    }
+    .text-cont {
+        line-height: 21px !important;
+    
+    }
+    .retail-show .right-border h1{
+    
+        font-size: 18px;
+        margin-bottom: 8px;
+    }
+    .retail-show-text p {
+        line-height: 21px;
+        text-align: justify;
+    }  
+    .swiper-slide .poster-def img {
+        display: block;
+        width: 202px;
+        height: 287px;
+        object-fit: cover;
+        opacity: 0;
+    }
+    .retail-cont {
+    
+        height: 25px;
+        width: 100%;
+    }  
+    .awards-description-mobile {
+        gap: 10px;
+    }
+    .awards-header p {
+        font-size: 50px;
+        line-height: 53px;
+        letter-spacing: 5.5px;
+        text-transform: uppercase;
+        margin-top: 20px;
+    }
+    .retail-show {
+        height: 670px;
+        overflow: visible;
+    }
+    .swiper-slide .detail {
+    
+        margin-bottom: 11px;
+    }
+    .poster-def {
+    
+        margin-bottom: 10px;
+    }
+    .retail-show-text p {
+    
+        font-size: 14px;
+    }
+    .retail-show {
+    
+        background-size: 670px;
+    }
+    .retail-show-text {
+        padding: 30px 37px;
+    }
+    .retail-awards-description p {
+        line-height: 22px;
+        font-size: 14px;
+    
+    }
+    .retail-awards-description  .right-border h1 {
+        font-size: 18px;
+    }
+    .retail-cont2 .mySwiper5 {
+        height: 327px;
+    }
+    .retail-awards {
+        margin: 80px 0 40px !important;
+    }
+    }
+    .firstnews-container img {
+    border-top-left-radius: var(--Number, 25px);
+    border-top-right-radius: var(--Number, 25px);
+    border-bottom-left-radius: none;
+    
+}
+.pin-spacer .text {
+        width: 100% !important;
+        padding: 0px 20px 0px !important;
+        margin-bottom: 10px;
+    }
+.firstnews-container {
+     
+        height: 400px;
+        gap: 0;
+    }
+    .about-us {
+        margin-top: 50px !important;
+    }
+    .retail-cont2{
+  
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    }
+   /* .retail-show  .swiper-button-prev:after{
+    content: 'prev';
+    font-size: 15px;
+}
+.retail-show  .swiper-button-next:after {
+    content: 'next';
+    font-size: 15px;
+}  */
+.retail-show .swiper-rtl .swiper-button-next {
+    top: unset;
+    left: 0;
+    bottom: -5px;
+}
+.retail-show  .swiper-rtl .swiper-button-prev {
+    top: unset;
+    right: 0;
+    bottom: -5px;
+}
+.mahnameh  .swiper-button-next:after {
+    content: 'next';
+    color: #fff;
+    opacity: 0.5;
+    font-size: 19px;
+}
+.mahnameh   .swiper-rtl .swiper-button-prev:after {
+    content: 'prev';
+    color: #fff;
+    opacity: 0.5;
+    font-size: 19px;
+}
+.mahnameh .mySwiper {
+    
+    overflow-x: hidden;
+    overflow-y: visible;
+   
+    height: auto !important;
+}
+.mahnameh .swiper-rtl .swiper-button-prev {
+    top: 50%;
+    right: unset;
+    left: 0;
+}
+.mahnameh .swiper-rtl .swiper-button-next {
+    top: 50%;
+    left: unset;
+    right: 0;
+}
+.swiper-button-prev:after, .swiper-rtl .swiper-button-next:after {
+   
+    font-size: 21px;
+}
+
+
+.service-cards ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+ .service-cards ul li:nth-child(1) {
+    top: 116px;
+}
+.service-cards ul li {
+    padding: 0;
+    box-shadow: 0px -4px 6px -3px rgb(151 151 151 / 20%), 0px 4px 6px rgb(140 140 140 / 20%);
+    position: sticky;
+    margin-bottom: 30px;
+    background: #fff;
+    z-index: 1;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    min-height: 200px;
+    border-top-left-radius: var(--Number, 25px);
+    border-top-right-radius: var(--Number, 25px);
+    border-bottom-left-radius: unset;
+    width: fit-content;
+    margin: 0 auto;
+    
+    border-bottom-right-radius: unset;
+    padding-bottom: 2px;
+    margin-bottom: 10px;
+}
+ .service-cards ul li:nth-child(2) {
+    top: 132px;
+}
+ .service-cards ul li:nth-child(3) {
+    top: 148px;
+}
+
+ .service-cards ul li:nth-child(4) {
+    top: 164px;
+}
+.firstnews-container-img2  img {
+    border-top-left-radius: var(--Number, 25px);
+    border-top-right-radius: var(--Number, 25px);
+    border-bottom-left-radius: unset;
+}
+.firstnews-container2{
+
+}
+.text20 {
+    width: 100% !important;
+    padding: 0px 20px 0px !important;
+    margin-bottom: 10px;
+
+    max-width: 349px
+
+}
+.news2{
+    
+    background-color: #fde9bb;
+    padding: 80px 0;
+}
+
+.img{
+    width: 100%;
+    height: auto!important;
+}
+.mySwiper2 {
+    padding-bottom: 36px;
+}
+.swiper-child .swiper-next{
+    max-width: unset;
+}
+.service-cards ul li{
+    width: 60%!important;
+}
+
+.description-container{
+    width: 100%;
+}
+.aboutus-text{
+    display: block;
+}
+.text-cont{
+    width: 100%;
+}
+.about-us{
+    display: block;
+}
+
+.swiper2{
+    height: fit-content!important;
+}
+    </style>
+</head>
+
+<body>
+
+
+    <section class="homepage-section">
+
+        <basis core="call" file="header.inc" />
+
+
+
+        <div class="homepage-text">
+            <basis core="print" datamembername="db.title">
+                <face filter="TypeID in (250)">
+            <p class="homepage-text1">@text </p>
+             
+            <p class="homepage-text2">  @largetext  </p>
+           </face>
+            </basis>
+            <div class="slider">
+                <img src="./assets/svg/slider.svg" class="arrow" />
+                <img src="./assets/svg/slider.svg" class="arrow" />
+            </div>
+        </div>
+
+
+
+        <div class="video-wrapper">
+
+<basis core="print" datamembername="db.defGalleryy">
+         
+                <face>
+            <video class="video-background" autoplay loop muted playsinline>
+                <source src="/@largeIMG" type="video/mp4" />
+            </video>
+
+
+   </face>
+            
+            <div class="overlay"></div>
+        </div>
+
+
+    </section>
+
+    <section class="news2">
+    
+
+   
+
+
+        <div class="service-cards">
+            <ul>
+                <basis core="print" datamembername="db.lastedNews">
+                    <face>
+            <li>
+                
+                <div class="firstnews-container2">
+                    <div class="firstnews-container-img2">
+                        <img src="/@00349X00211prp" class="img" />
+                    </div>
+                    <div class="text20">
+                        <p class="number">@RowNumber.</p>
+                        <h3 class="news-title">
+                           @title
+                        </h3>
+              
+                      
+                        <div class="news-link">
+                            <div class="gray-logo">
+                                <img src="./assets/svg/brand-logo-gray.svg" />
+                            </div>
+                            <a href="/@link">
+                                <p>www.news.ir</p>
+                            </a>
+                        </div>
+                    </div>
+               
+                </div>
+        
+        
+        </li>
+        </face>
+    </basis>
+            </ul>
+            </div>
+
+
+
+    </section> 
+   <section class="about-us">
+        <div class="description-container">
+            <div class="right-border">
+                <a href="./html/aboutus.html">
+                    <h1>درباره ما</h1>
+                </a>
+                <div class="more">
+                    <p>بیشتر بدانید</p>
+                    <div class="circle">
+                        <div class="dot"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="aboutus-text">
+                <basis core="print" datamembername="db.def-about">
+                    <face filter="TypeID in (129)">
+                <div class="text-cont text-cont-mobile2">
+      @Answer
+                </div>
+                 </face>
+                 </basis>
+
+                <div class="text-cont text-cont-mobile">
+                    <basis core="print" datamembername="db.def-about">
+                        <face filter="TypeID in (250)">
+                            @Answer
+                        </face>
+                        </basis>
+                </div>
+            </div>
+        </div>
+        
+        <div class="img-cont">
+            <img src="assets/svg/brand-logo-gray.svg" class="logo-img" />
+        </div>
+
+        <div class="aboutus-retail-awards">
+            <div class="swiper mySwiper swiper-mobile" style="overflow-x: hidden">
+                <div class="swiper-wrapper" style="height: auto">
+                    <basis core="print" datamembername="db.aboutGallery">
+                        <face filter="ord in (1000)">
+
+                    <div class="swiper-slide">
+                        <img src="/@largeIMG" alt="" />
+                    </div>
+                    </face>
+                    </basis>
+
+                </div>
+                <div class="arrows">
+                    <div class="arrrow-btn">
+                        <div class="about-next" onclick="aboutusenext()">
+                            <img src="./assets/svg/right-arrow.svg" />
+                        </div>
+                        <div class="about-prev" onclick="aboutuseprev()">
+                            <img src="./assets/svg/left-arrow.svg" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="retail-show">
+        <div class="retail-show-text">
+            <div class="right-border">
+                <basis core="print" datamembername="db.def-retail">
+                    <face filter="TypeID in (128)">
+                <h1>@text</h1>
+                </face>
+                </basis>
+                <div class="more">
+                    <a href="https://www.tejaratetalaeenews.ir/IRAN-RETAIL-SHOW">
+                        <p>www.iranretail.ir</p>
+                    </a>
+                    <div class="circle">
+                        <div class="dot"></div>
+                    </div>
+                </div>
+            </div>
+            <basis core="print" datamembername="db.def-retail">
+                <face filter="TypeID in (129)">
+            <div class="retail-p">
+@Answer
+            </div>
+            </face>
+            </basis>
+        </div>
+
+        <div class="retail-cont2">
+            <div class="swiper myswiper mySwiper5">
+                <div class="swiper-wrapper swiper-wrapper_js">
+                    <basis core="print" datamembername="db.retailGallery">
+                        <face filter="ord in (1000)">
+
+                    <div class="swiper-slide">
+
+                        <div class=" poster-def">
+
+                            <img src="/@largeIMG" width="311" height="441"></div>
+                        <p class="detail">
+                            <img src="/images/Vector20.png" />
+                            @name
+                        </p>
+                    </div>
+                    </face>
+                    </basis>
+
+
+
+                </div>
+
+                
+
+                <div class="swiper-button-next" style="color: white"></div>
+                <div class="swiper-button-prev" style="color: white"></div>
+            </div>
+        </div>
+        <div class="retail-cont">
+        </div>
+
+    </section>
+
+    <section class="retail-awards">
+        <div class="retail-awards-description">
+            <div class="right-border">
+                <basis core="print" datamembername="db.def-retail">
+                    <face filter="TypeID in (250)">
+                <h1>  @text</h1>
+                </face>
+                </basis>
+                <div class="more">
+                    <a href="https://www.tejaratetalaeenews.ir/IRAN-RETAIL-SHOW">
+                        <p>www.iranretail.ir</p>
+                    </a>
+                    <div class="circle">
+                        <div class="dot"></div>
+                    </div>
+                </div>
+            </div>
+            <basis core="print" datamembername="db.def-retail">
+                <face filter="TypeID in (250)">
+            <p>
+   @largetext
+            </p>
+            </face>
+            </basis>
+
+        </div>
+
+        <div class="awards-description">
+            <div class="awards-description-mobile">
+                <div class="swiper mySwiper2 swiper2" style="margin: 0">
+                    <div class="swiper-wrapper">
+                        <basis core="print" datamembername="db.retailGallery">
+                            <face filter="ord in (1010)">
+
+                        <div class="swiper-slide slide" >
+                            <div class="description-text">
+                                <h1>@name</h1>
+                                <p>
+                                 @description
+                                </p>
+                            </div>
+                            <img src="/@largeIMG" class="award-img" />
+                        </div>
+                        </face>
+                        </basis>
+
+                    
+                    </div>
+                    <div class="arrrow-btn2">
+                        <div class="awards-next">
+                            <img src="./assets/svg/right-arrow.svg" />
+                        </div>
+                        <div class="awards-prev">
+                            <img src="./assets/svg/left-arrow.svg" />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="awards-header">
+                    <div>
+                        <img src="./assets/image/Rectangle 19.png" />
+                    </div>
+                    <p>IRAN <br />RETAIL <br />AWARDS</p>
+                </div>
+            </div>
+
+            <div class="swiper-mobile">
+                <div class="swiper mySwiper2 swiper3" style="margin: 0">
+                    <div class="swiper-wrapper">
+                        <basis core="print" datamembername="db.retailGallery">
+                            <face filter="ord in (1010)" >
+                        <div class="swiper-slide slide" style="display: flex">
+                            <div class="description-text-mobile">
+                                <h1>@name</h1>
+                                <p>
+                                 @description
+                                </p>
+                            </div>
+                            <img src="/@largeIMG" class="award-img" />
+                            </div>
+                      
+                        </face>
+                        </basis>
+                      
+                    </div>
+                    <div class="arrrow-btn">
+                        <div class="swiper-button-next awards-next about-next" style="
+                  --swiper-navigation-size: 10px;
+                  color: white;
+                  width: 30.692px;
+                  height: 30px;
+                " onclick="aboutusenext()"></div>
+                        <div class="swiper-button-prev awards-prev about-next" onclick="aboutuseprev()" style="
+                  --swiper-navigation-size: 10px;
+                  color: white;
+                  width: 30.692px;
+                  height: 30px;
+                  position: absolute;
+                "></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mahnameh">
+        <div class="right-border2">
+            <h1>ماهنامه تجارت طلایی</h1>
+            <div class="more">
+                <a href="https://www.tejaratetalaeenews.ir/IRAN-RETAIL-SHOW">
+                    <p class="mah">www.iranretail.ir</p>
+                </a>
+                <div class="circle2">
+                    <div class="dot2"></div>
+                </div>
+            </div>
+        </div>
+
+     
+
+        <div class="mahnameh-mobile-cont1">
+            <div class="swiper mySwiper swiper-mobile" style="
+          
+            margin-top: 40px;
+            margin-bottom: 70px;
+          ">
+                <div class="swiper-wrapper">
+                    <basis core="print" datamembername="db.def-mahname">
+                        <face >
+                            <a href="/@link" class="swiper-slide swiper-child">
+                                <img src="/@00264X00288prp"  alt="Image 2" />
+                                <div class="swiper-next">
+                                    <span>
+                                        @prp_7248
+                                    </span>
+                                    <p>
+                                        @title
+                                    </p>
+        
+        
+                                </div>
+                            </a>
+                    </face>
+                    </basis>
+
+                </div>
+                <div class="swiper-button-next about-next"></div>
+                <div class="swiper-button-prev about-prev"></div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+        <basis core="call" file="footer.inc" />
+
+
+
+
+
+    </section>  
+
+
+    <script src="js/gsap.min.js"></script>
+    <script src="js/ScrollTrigger.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="/_js/jquery/jquery-3.4.1.min.js"></script>
+    <script src="/_js/imageLoaded.js"></script>
+
+    <script src="js/script-tablet.js"></script>
+
+  
+    <script>
+  
+
+
+
+
+        $(".header_js .menu-list").click(function () {
+            $(".header_js .sidebar").toggleClass("sidebar-toggle");
+        });
+
+
+        $(".header_js .closebtn").click(function () {
+            $(".header_js .sidebar").toggleClass("sidebar-toggle");
+        });
+        $(".header_js .toggleSearch").click(function () {
+            $(".header_js .search-wrapper").toggleClass("search-wrapper-toggle");
+        });
+        $(".poster-def").click(function () {
+            $(this).toggleClass("poster-def-remove");
+        });
+
+        $(".swiper-wrapper_js  .swiper-slide").each(function () {
+            $(this).click(function () {
+                $(this).addClass('colormm').siblings().removeClass('colormm');
+            });
+        });
+ $(document).ready(function (e) {
+ $("#searchform").submit(function (e) {
+ $.ajax({
+ type: "POST",
+ url: "/serach-result.bc",
+ data: $("#searchform").serialize(),
+ success: function (e) {
+ $("#searchResults").html(e)
+ }
+ }), e.preventDefault()
+ })
+ })
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,161 @@
+.retail-show {
+  height: 100vh;
+  background-image: url("../images/backtehran.png");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  position: relative;
+  overflow-x: hidden;
+  margin: 50px 0 80px;
+}
+.retail-show-text {
+  width: 600px;
+  padding: 20px 40px;
+  margin-top: 40px;
+  margin-right: 50px;
+}
+.awards-description {
+  display: flex;
+}
+.right-border {
+  border-right: 1px solid black;
+  padding-right: 10px;
+}
+.right-bordr h1 {
+  font-size: 22px;
+}
+.retail-show-text p {
+  line-height: 25px;
+  text-align: justify;
+}
+.retail-show-text h1 {
+  margin-bottom: 20px;
+}
+.more {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  overflow: hidden;
+}
+.more a {
+  text-decoration: none;
+  color: black;
+}
+.retail-p {
+  margin-top: 20px;
+  width: 503px;
+  overflow: hidden;
+}
+.retail-cont {
+  background: linear-gradient(
+    90deg,
+    rgba(26, 74, 151, 1) 0%,
+    rgba(238, 35, 138, 1) 100%
+  );
+  border-radius: 20px;
+  padding: 20px 40px;
+  width: 90%;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.poster-modal {
+  position: absolute;
+  bottom: 60px;
+  right: 13%;
+  cursor: pointer;
+}
+.poster-modal2 {
+  position: absolute;
+  bottom: 60px;
+  left: 50%;
+  transform: translateX(-50%);
+  cursor: pointer;
+}
+.poster-modal3 {
+  position: absolute;
+  bottom: 60px;
+  left: 13%;
+  cursor: pointer;
+}
+.detail {
+  color: #fff;
+  text-align: justify;
+  font-family: "Telugu MN";
+  font-size: 25px;
+  font-weight: 250;
+}
+.mySwiper5 {
+  width: 100%;
+  height: 100%;
+}
+.swiper-slide {
+  text-align: center;
+  width: 100%;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.swiper-slide p {
+  display: flex;
+  justify-content: center;
+}
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.swiper-mobile-cont {
+  display: none;
+}
+/* .swiper-wrapper {
+  transform: none !important;
+} */
+@media only screen and (max-width: 680px) {
+  .swiper-slide p {
+    font-size: 15px;
+    font-weight: 250;
+    margin: auto;
+  }
+  .retail-show-text {
+    width: 100%;
+    margin-right: 0;
+  }
+  .retail-p {
+    width: 100%;
+    margin-top: 20px;
+  }
+  .retail-show {
+    margin: auto;
+  }
+  .poster-modal {
+    position: absolute;
+    bottom: 45px;
+    left: 50%;
+    transform: translateX(-50%);
+    cursor: pointer;
+  }
+  .poster-modal2 {
+    position: absolute;
+    bottom: 45px;
+    left: 50%;
+    transform: translateX(-50%);
+    cursor: pointer;
+  }
+  .poster-modal3 {
+    position: absolute;
+    bottom: 45px;
+    left: 50%;
+    transform: translateX(-50%);
+    cursor: pointer;
+  }
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+

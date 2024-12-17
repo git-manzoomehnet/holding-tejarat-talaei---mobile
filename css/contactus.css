@@ -1,0 +1,350 @@
+body {
+  background-color: black;
+}
+header {
+  display: flex;
+  color: white;
+  width: 90%;
+  margin: auto;
+  height: 125px;
+  position: fixed;
+  right: 50%;
+  transform: translateX(50%);
+  z-index: 100000000;
+}
+.header-scrolleded {
+  background-color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.description-wrapper {
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+.header-description {
+  display: flex;
+  align-items: center;
+  gap: 49px;
+  padding-top: 53px;
+  padding-bottom: 30px;
+  font-weight: 400;
+}
+.header-description a {
+  text-decoration: none;
+  color: white;
+}
+.search-wrapper {
+  width: 90%;
+  height: 180px;
+  opacity: 0.91;
+  border-radius: 15px;
+  background-color: white;
+  margin: 9px auto;
+  position: relative;
+  overflow-y: scroll;
+  z-index: 100;
+  box-shadow: 5px 5px 5px 5px rgba(236, 236, 236, 0.374);
+  overflow-x: hidden;
+}
+.search-container {
+  width: 535px;
+  margin: auto;
+}
+.closeBtn {
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  margin-top: 4px;
+  cursor: pointer;
+  right: 0;
+}
+.search-input {
+  display: flex;
+  align-items: center;
+  margin: 30px auto;
+  height: 39px;
+  background: #fff;
+  box-shadow: 0px 4px 4px 0px rgba(194, 194, 194, 0.25);
+  padding: 0 15px;
+}
+.search-input input {
+  flex: 1;
+  outline: none;
+  border: none;
+}
+
+.brand-logo {
+  margin-top: 12px;
+}
+.highlight {
+  background-color: #ffcb05;
+}
+.showMoreLink {
+  text-decoration: none;
+  color: #989898;
+  font-size: 12px;
+  cursor: pointer;
+  display: flex;
+  justify-content: end;
+}
+.result {
+  border-bottom: 1px solid #989898;
+  margin-bottom: 30px;
+  font-size: 14px;
+  font-weight: 400;
+  text-align: right;
+  height: flex;
+}
+.notfound {
+  text-align: center;
+}
+.more {
+  display: flex;
+  gap: 5px;
+}
+.frame img {
+  display: flex;
+  width: 100%;
+}
+.contact-us {
+  color: white;
+  display: flex;
+  width: 100%;
+  height: 290px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.header-contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  width: 40%;
+}
+.header-contact h2 {
+  flex: 1;
+  color: #d6bb2c;
+  font-size: 1rem;
+}
+.h {
+  color: #d6bb2c;
+  text-align: center;
+  margin-top: 80px;
+  margin-bottom: 50px;
+}
+.h2 {
+  color: #d6bb2c;
+  margin-bottom: 10px;
+}
+.header-contact div {
+  line-height: 20px;
+}
+.sub-header {
+  margin-bottom: 10px;
+}
+.sub-header p {
+  font-size: 15px;
+}
+.header-border {
+  border-left: 1px solid #d6bb2c;
+  border-right: 1px solid #d6bb2c;
+  margin: 0 60px;
+}
+
+.form-cont {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+input {
+  padding: 10px 5px;
+  width: 400px;
+  margin: 15px 0;
+  background-color: #171717;
+}
+textarea {
+  background-color: #171717;
+  width: 400px;
+  margin: 15px 0;
+}
+#submit {
+  color: white;
+  border: 1px solid rgb(102, 102, 102);
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+.submit-cont {
+  display: flex;
+  align-items: center;
+  width: 400px;
+}
+.map-cont {
+  position: relative;
+  cursor: pointer;
+}
+.map {
+  width: 100%;
+  margin: 80px 0;
+}
+.google-map {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+}
+.logo {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+.brand {
+  width: 120px;
+  height: 140px;
+}
+.footer-deatail {
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  width: 90%;
+  margin: auto;
+}
+.media-border {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  border: 1px solid white;
+  border-radius: 50%;
+  margin-left: 10px;
+  order: 0;
+  font-size: 15px;
+}
+.footer-text {
+  display: flex;
+  align-items: center;
+  text-align: left;
+}
+.copyright {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8rem;
+  gap: 10px;
+  margin-top: 15px;
+  color: white;
+}
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+#searchInput {
+  background-color: white;
+}
+@media only screen and (max-width: 680px) {
+  .header-description p {
+    display: none;
+  }
+  .header-description {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-top: 0;
+    padding-bottom: 0;
+    font-weight: 400;
+    border: none;
+  }
+  header {
+    display: flex;
+    align-items: center;
+    background-color: black;
+    width: 100%;
+    margin: auto;
+    height: 100px;
+    padding: 0 20px;
+  }
+  .brand-logo {
+    padding-top: 20px;
+  }
+  .header-border {
+    border-bottom: none;
+    margin-bottom: 20px;
+  }
+  #search {
+    flex: 1;
+  }
+  .contact-us {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    text-align: right;
+    height: 100vh;
+  }
+  .header-border {
+    border-top: 1px solid #d6bb2c;
+    border-bottom: 1px solid #d6bb2c;
+    border-left: 0;
+    border-right: 0;
+    margin: 0;
+    padding: 10px 0;
+  }
+  .header-contact {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 60%;
+  }
+  .form-cont {
+    /* height: 100vh; */
+  }
+  textarea {
+    height: 100px;
+  }
+  h2 {
+    margin-bottom: 30px;
+  }
+  .h {
+    font-size: 22px;
+    text-align: right;
+    margin: 0 20px;
+    margin-top: 90px;
+    margin-bottom: 40px;
+  }
+  .google-map {
+    width: 50px;
+  }
+  .footer-text {
+    color: white;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 160%;
+    text-transform: lowercase;
+  }
+  .footer-deatail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .copyright {
+    color: white;
+  }
+  .search-container {
+    width: 400px;
+    margin: auto;
+  }
+  .footer-deatail :nth-child(1),
+  .footer-deatail :nth-child(2),
+  .footer-deatail :nth-child(3) {
+    display: none;
+  }
+  #searchInput {
+    background-color: white;
+  }
+}
+

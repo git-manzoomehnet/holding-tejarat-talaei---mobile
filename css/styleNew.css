@@ -1,0 +1,163 @@
+.accordions{
+    top: 150px !important;
+}
+.accordion{
+    width: 100% !important;
+    max-width: 1160px!important;
+    overflow: hidden;
+    z-index: 10;
+}
+.aboutus-retail-awards{
+    position: relative;
+    gap: 0 !important;
+}
+  .retail-show-text{
+width: 90vw !important;
+margin: 0 auto;
+max-width: 1300px;
+}
+.retail-show{
+    /* height:100vh !important; */
+}
+.news{
+    overflow: hidden;
+}
+.awards-description-mobile .swiper-slide img{
+    width: 90% ;
+    height: 90% ;
+}
+.awards-description-mobile .slide img:hover {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+.mahnameh .swiper-child .swiper-next{
+/* background-color: #f4bcdc !important; */
+}
+.mahnameh .swiper-slide img{
+    width: 100% !important;
+    border-radius: 20px 20px 0 0;
+}
+.swiper-child .swiper-next{
+    max-width: 100% !important;
+}
+.about-section{
+    margin-top: 180px !important;
+    max-width: 1300px;
+    margin: 180px auto 45px auto;
+}
+.sp-slider .sp-item .sp-background {
+    border-radius: 30px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    z-index: -1;
+    object-fit: cover;
+    width: 100%;
+    background-repeat: no-repeat;
+}
+.twobox1{
+    height: 500px;
+}
+.box2-sec .twobox1:last-child ,
+.box2-sec .twobox1:first-child{
+    padding: 32px 25px;
+}
+.twobox {
+    /* height: 100%; */
+}
+.twobox img {
+    width: 100%;
+    border-radius: 30px;
+    height: 85%;
+}
+.hover-titr,
+.text-hover-box {
+
+    text-align: center;
+}
+.hover-text{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.text-hover-box{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.twobox1:hover{
+    padding: 32px 25px !important;
+}
+.video-cover {
+    margin-top: 100px;
+    position: relative;
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1300px;
+}
+.video-cover video {
+    display: block;
+    object-fit: cover;
+    width: 100%;
+    margin: 0 auto;
+}
+.about-twobox .box-ab1 {
+    padding: 78px 50px !important;
+}
+.titr-abt {
+    margin-bottom: 22px !important;
+}
+.lohswiper .swiper-slide img {
+    width: auto !important;
+    object-fit: contain !important;
+    max-height: unset !important;
+}
+
+#sp-main-body{
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.box2-sec{
+    max-width: 1300px;
+    margin: 170px auto 0 auto;
+}
+.about-twobox{
+    max-width: 1300px;
+    margin: 120px auto 0 auto;
+}
+
+.managment-box{
+max-width: 1300px;
+margin: 50px auto 0 auto;
+}
+
+.loh-sec{
+    max-width: 1300px;
+    margin: 100px auto 0 auto;
+}
+
+.cer-sec{
+    max-width: 1300px;
+    margin: 100px auto 0 auto;
+}
+
+.qodef-interactive-link-showcase .qodef-m-item .qodef-e-title{
+    display: flex;
+    align-items: center;
+}
+.qodef-interactive-link-showcase.qodef-layout--list .qodef-m-item .qodef-e-subtitle-line{
+    position: relative;
+}

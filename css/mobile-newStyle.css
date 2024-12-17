@@ -1,0 +1,178 @@
+.contactBody h2 {
+  font-weight: 400;
+}
+.contactBody .flexcontact2 {
+  display: block;
+}
+.contactBody .flexcontact2 h2 {
+  margin: 0 0 20px 0;
+}
+.contactBody .flexcontact2 .form-cont {
+  display: block;
+}
+.contactBody .flexcontact2 p {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 21.91px;
+  color: white;
+}
+.contactBody .flexcontact2 form {
+  background-color: transparent;
+}
+.contactBody .flexcontact2 form [data-bc-title-container] {
+  display: none;
+}
+.contactBody .flexcontact2 form [data-bc-part-container] {
+  width: 100%;
+}
+.contactBody .flexcontact2 form [data-bc-part-related-cell] {
+  margin: 0;
+  margin-bottom: 13px;
+}
+.contactBody .flexcontact2 form [data-bc-part-related-cell] input {
+  margin: 0;
+}
+.contactBody .flexcontact2 form [data-bc-question]:last-child [data-bc-part-related-cell] {
+  margin-bottom: 0;
+}
+.contactBody .flexcontact2 form input,
+.contactBody .flexcontact2 form textarea {
+  background-color: #171717 !important;
+  border-radius: 0 !important;
+  border: none !important;
+  border-bottom: 1px solid #818181 !important;
+  font-size: 14px !important;
+  font-weight: 400 !important;
+  line-height: 21.91px !important;
+  text-align: right !important;
+  color: #818181 !important;
+}
+.contactBody .flexcontact2 form textarea {
+  margin: 0;
+}
+.contactBody .flexcontact2 form .responsMsg1 {
+  color: white;
+  position: absolute;
+  top: -27px;
+  font-size: 14px;
+}
+.contactBody .flexcontact2 form .btnsContainer {
+  display: flex;
+  align-items: center;
+  column-gap: 15px;
+}
+.contactBody .flexcontact2 form button {
+  width: 100%;
+  height: 39px;
+  border-radius: 25px 0 0 25px;
+  border: 1px solid #818181;
+  background-color: transparent;
+  outline: none;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24.61px;
+  color: #818181;
+}
+
+.defaultBody .mahnameh-mobile-cont {
+  position: relative;
+}
+.defaultBody .mahnameh-mobile-cont .swiper-button-next.about-next,
+.defaultBody .mahnameh-mobile-cont .swiper-button-prev.about-prev {
+  width: 25px;
+  background: #febe1b;
+  height: 25px;
+  font-weight: 900;
+}
+.defaultBody .mahnameh-mobile-cont .swiper-button-next:after,
+.defaultBody .mahnameh-mobile-cont .swiper-button-prev:after {
+  opacity: 1;
+  font-size: 12px;
+  color: white;
+}
+.defaultBody .mahnameh-mobile-cont .swiper-button-next.about-next {
+  right: 0;
+}
+.defaultBody .mahnameh-mobile-cont .swiper-button-prev.about-prev {
+  left: 0;
+}
+.defaultBody .aboutus-retail-awards .swiper-slide img {
+  border-radius: 5px;
+}
+.defaultBody .aboutus-retail-awards .arrows {
+  margin-top: 25px;
+}
+.defaultBody .aboutus-retail-awards .arrows .about-next,
+.defaultBody .aboutus-retail-awards .arrows .about-prev {
+  background-color: #cfb62c;
+}
+.defaultBody .aboutus-retail-awards .arrows .about-next img,
+.defaultBody .aboutus-retail-awards .arrows .about-prev img {
+  width: 12px;
+}
+.defaultBody .aboutus-retail-awards .swiper-mobile {
+  height: auto;
+}
+.defaultBody .awards-description-mobile {
+  position: relative;
+}
+.defaultBody .awards-description-mobile .arrrow-btn2 {
+  transform: translateY(125%);
+  right: 0;
+}
+.defaultBody .awards-description-mobile .arrrow-btn2 .awards-next,
+.defaultBody .awards-description-mobile .arrrow-btn2 .awards-prev {
+  width: 24.87px;
+  height: 25px;
+  background-color: #febe1b;
+}
+.defaultBody .about-us {
+  background-color: transparent;
+}
+.defaultBody .about-us .text-cont {
+  line-height: 27px;
+}
+.defaultBody .retail-show-text {
+  margin-top: 0;
+}
+
+.aboutUsBody .sppb-row-container .sp-nav-control {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 7px;
+}
+.aboutUsBody .sppb-row-container .sp-nav-control .next-control.nav-control,
+.aboutUsBody .sppb-row-container .sp-nav-control .prev-control.nav-control {
+  width: 24px !important;
+  height: 24px !important;
+  border-radius: 10px !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background-color: #CFB62C !important;
+}
+.aboutUsBody .sppb-row-container .sp-nav-control .next-control.nav-control i,
+.aboutUsBody .sppb-row-container .sp-nav-control .prev-control.nav-control i {
+  line-height: 1px;
+  font-size: 17px;
+  height: fit-content;
+  line-height: 4px;
+  transform: translateY(-1px);
+}
+.aboutUsBody .sp-slider .sp-item .sp-background {
+  border-radius: 10px;
+}
+.aboutUsBody .loh-sec {
+  margin-bottom: 113px;
+}
+.aboutUsBody .titr-box {
+  font-weight: 400 !important;
+}
+.aboutUsBody .top-pop {
+  padding: 10px 20px;
+}
+.aboutUsBody .modal {
+  width: 90%;
+}/*# sourceMappingURL=mobile-newStyle.css.map */
