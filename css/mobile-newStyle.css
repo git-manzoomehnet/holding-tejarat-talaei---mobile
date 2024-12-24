@@ -176,3 +176,15 @@
 .aboutUsBody .modal {
   width: 90%;
 }/*# sourceMappingURL=mobile-newStyle.css.map */
+
+
+.aboutUsBody .enTitleManager{
+margin-top: 5px;
+color: #CECECE;
+
+font-family: "telugu";
+font-size: 18px;
+line-height: 30.36px;
+text-align: right;
+color: #CECECE;
+}

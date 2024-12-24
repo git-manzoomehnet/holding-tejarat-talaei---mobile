@@ -8,12 +8,12 @@
 .logochange3 {
   transition: all 0.4s;
 }
-.logochange:hover .logochange3 {
+/* .logochange:hover .logochange3 {
   display: none;
 }
 .logochange:hover .logochange3 {
   display: none;
-}
+} */
 .logochange:hover .logochange2 {
   display: block;
 }
@@ -209,5 +209,7 @@
   width: 60%;
 }
 .arrrow-btn2 {
-  right: 50%;
+  left: 310px;
+  /* right: 50%; */
 }
+
